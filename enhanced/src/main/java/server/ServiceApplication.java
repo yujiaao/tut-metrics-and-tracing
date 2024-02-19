@@ -22,6 +22,13 @@ import java.util.Set;
 @SpringBootApplication
 public class ServiceApplication {
 
+    /**
+     * &#064;startuml
+     *  bob -> alice
+     *  alice -> andrew
+     * &#064;enduml
+     * @return
+     */
     @Bean
     WebFluxTagsContributor consoleTagContributor() {
         return (exchange, ex) -> {

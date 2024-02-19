@@ -33,7 +33,7 @@ class AvailabilityController {
     @GetMapping("/availability/{console}")
     Map<String, Object> getAvailability(@PathVariable String console) {
         return Map.of("console", console,
-                "available", checkAvailability(console));
+                "available", checkAvailability(console) );
     }
 
     private boolean checkAvailability(String console) {
